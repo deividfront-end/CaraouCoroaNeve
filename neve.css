@@ -1,13 +1,5 @@
 
 
-body {
-    margin: 0;
-    background-color: #1a1a1a; /* Fundo escuro para simular a noite */
-    color: rgb(247, 8, 8);
-    font-family: sans-serif;
-    text-align: center;
-}
-
 #snow-container {
     position: fixed; /* Fixa a neve na tela */
     top: 0;

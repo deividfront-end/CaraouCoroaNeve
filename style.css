@@ -2,9 +2,6 @@
 
 body{
   margin: 0;
-  overflow: hidden; /* Impede a barra de rolagem */
- 
-  
   font-family: sans-serif;
   text-align: center;
   background-image: url(./img/fundo\ 2.jpg);
