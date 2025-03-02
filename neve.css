@@ -1,0 +1,41 @@
+
+
+body {
+    margin: 0;
+    background-color: #1a1a1a; /* Fundo escuro para simular a noite */
+    color: rgb(247, 8, 8);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#snow-container {
+    position: fixed; /* Fixa a neve na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite interagir com o conteúdo abaixo */
+    z-index: 100; /* Garante que a neve fique na frente */
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.652);
+    border-radius: 50%; /* Transforma em círculo */
+    opacity: 0.7;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh); /* Move para baixo da tela */
+    }
+}
+
+.conteudo {
+    position: relative;
+    z-index: 101; /* Garante que o conteúdo fique acima da neve */
+    padding: 20px;
+}

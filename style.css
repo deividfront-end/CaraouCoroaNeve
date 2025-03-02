@@ -1,0 +1,259 @@
+
+
+body{
+  margin: 0;
+  overflow: hidden; /* Impede a barra de rolagem */
+ 
+  
+  font-family: sans-serif;
+  text-align: center;
+  background-image: url(./img/fundo\ 2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container-box-moeda{
+  height: 450px;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.box{
+  margin-top:-10px;
+  width: 200px;
+  background-color: rgba(75, 71, 71, 0.566);
+}
+.container-moeda{
+ 
+    padding: 0px;
+    margin-top:250px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container-botao-girar-box{
+ 
+
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.576);
+  display: flex;
+  padding-bottom:20px;
+  justify-content: center;
+  justify-items: center;
+  
+ 
+}
+
+.container-botao-girar{
+
+  box-shadow: 3px 3px 5px rgb(154, 154, 154);
+  border-radius: 12px;
+  width: 160px;
+    margin-top: 0px;
+  
+    display: flex;
+    padding:  20px;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom:-30px;
+    background-image: url(./img/textura.jpg);
+    background-size: cover;
+   
+}
+
+button{
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(28, 27, 27, 0.864);
+    color: white;
+}
+button:hover{
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgba(98, 92, 92, 0.927);
+  color: white;
+  transition: 1s;
+ font-size: 21px;
+}
+
+.container-resultado {
+ height: 61px;
+  margin-bottom: -130px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.576);
+  margin-top: 0px;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  
+}
+
+
+
+
+
+
+
+
+#moeda {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    opacity: 70%;
+  }
+
+  .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+
+  #cara {
+    box-shadow: 4px 4px 1px rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
+    background-image: url(./img/STALKER\ CARA.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(0, 0, 0);
+    transform: rotateY(0deg);
+  
+  
+  }
+
+  #coroa {
+    border: solid 1px ;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.791);
+    border-radius: 100px;
+    background-image: url(./img/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: 0px;
+    background-color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+  }
+  #resultado {
+   
+    height: 60px;
+   
+    border-radius: 12px 12px 0px 0px;
+    justify-content: center;
+    padding: 20px;
+    background-image: url(./img/textura.jpg);
+    background-size: cover;
+    background-color: black;
+    margin-top:-20px;
+    font-size: 1.4em;
+    width: 300px;
+    color: white;
+    margin-bottom: -12px;
+    box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.807);
+}
+
+
+
+.rodape{display: flex;
+  
+  font-size: 20px;
+  margin-top: 440px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+
+  color: aliceblue;
+}
+
+@media (max-width: 415px) {
+  body {
+      background-color: black;
+      background-size: cover;
+      box-sizing: border-box;
+  }
+
+  .container-box-moeda{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .box{
+    margin-top:-10px;
+    width: 200px;
+    background-color: rgba(75, 71, 71, 0.566);
+  }
+
+  .container-moeda {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 259px; /* Reduzido */
+  }
+
+  .rodape {
+      display: flex;
+      font-size: 16px; /* Reduzido */
+      margin-top: 50px; /* Reduzido */
+      padding: 10px;
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+      color: aliceblue;
+  }
+
+  .container-botao-girar-box{
+    margin-top: 7px;
+    background-color: rgba(0, 0, 0, 0.576);
+    display: flex;
+    padding-bottom:20px;
+    justify-content: center;
+    justify-items: center;
+    
+   
+  }
+  
+  
+  .container-resultado {
+   margin-bottom: 218px;
+    height: 65px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.576);
+    margin-top: 0px;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    
+  }
+  
+  #resultado {
+
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.848);
+      margin-top: -20px;
+      font-size: 1.2em; /* Reduzido */
+      text-align: center;
+      color: white;
+      border-radius: 12px;
+  }
+
+}
